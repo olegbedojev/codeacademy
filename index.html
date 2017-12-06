@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Smash zaidimas</title>
+    <link rel="stylesheet" href="./smash.css">
+  </head>
+  <body>
+    <div id="overlay">
+      <div id="startGame">
+        <h1>Let's play the Game</h1>
+        <button type="button" name="button" onclick="start()">Start</button>
+      </div>
+      <div id="lostGame">
+        <h1>You LOOOOOSED!</h1>
+        <h2>Score:</h2>
+        <h1 id="lostResult"></h1>
+        <button type="button" name="button" onclick="reset()">Try again</button>
+      </div>
+
+    </div>
+    <div id="result">
+      Result: 0
+    </div>
+    <div id="level">
+      Level: 1
+    </div>
+      <div class="game-board">
+        <div class="deadline">
+        </div>
+        <div class="minion" id="minion1" onclick="smash('minion1')">
+          <div class="eye">
+          </div>
+        </div>
+      </div>
+      <div class="game-board">
+        <div class="minion" id="minion2" onclick="smash('minion2')">
+          <div class="eye">
+          </div>
+        </div>
+      </div>
+      <div class="game-board">
+        <div class="minion" id="minion3" onclick="smash('minion3')">
+          <div class="eye">
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="smash.js"></script>
+  </body>
+</html>
